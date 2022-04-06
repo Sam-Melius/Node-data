@@ -13,7 +13,7 @@ class BinaryTreeNode {
   }
 
   getList() {                               //added the getList to bottom of code to see console log results
-    if(!this.next) return this.value;
+    if(!this.next) return this.value;           //will continue through list to original node
     return `${this.value} ${this.next.getList()}`;
     
   }
